@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#Files\\FlyingChess\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1D61CF1-E965-47E4-B3F0-BDBD8F7DA5A2}|FlyingChess.csproj|d:\\c#files\\flyingchess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1D61CF1-E965-47E4-B3F0-BDBD8F7DA5A2}|FlyingChess.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1D61CF1-E965-47E4-B3F0-BDBD8F7DA5A2}|FlyingChess.csproj|d:\\c#files\\flyingchess\\points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1D61CF1-E965-47E4-B3F0-BDBD8F7DA5A2}|FlyingChess.csproj|solutionrelative:points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1D61CF1-E965-47E4-B3F0-BDBD8F7DA5A2}|FlyingChess.csproj|d:\\c#files\\flyingchess\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1D61CF1-E965-47E4-B3F0-BDBD8F7DA5A2}|FlyingChess.csproj|solutionrelative:graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#Files\\FlyingChess\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\C#Files\\FlyingChess\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADwBAAAAAAAAAAAuwEUBAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T10:48:34.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Points.cs",
+              "DocumentMoniker": "D:\\C#Files\\FlyingChess\\Points.cs",
+              "RelativeDocumentMoniker": "Points.cs",
+              "ToolTip": "D:\\C#Files\\FlyingChess\\Points.cs",
+              "RelativeToolTip": "Points.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T10:00:28.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Graph.cs",
+              "DocumentMoniker": "D:\\C#Files\\FlyingChess\\Graph.cs",
+              "RelativeDocumentMoniker": "Graph.cs",
+              "ToolTip": "D:\\C#Files\\FlyingChess\\Graph.cs",
+              "RelativeToolTip": "Graph.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T10:14:35.872Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

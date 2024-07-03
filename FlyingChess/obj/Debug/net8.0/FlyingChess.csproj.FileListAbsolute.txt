@@ -1,0 +1,14 @@
+D:\C#Files\FlyingChess\bin\Debug\net8.0\FlyingChess.exe
+D:\C#Files\FlyingChess\bin\Debug\net8.0\FlyingChess.deps.json
+D:\C#Files\FlyingChess\bin\Debug\net8.0\FlyingChess.runtimeconfig.json
+D:\C#Files\FlyingChess\bin\Debug\net8.0\FlyingChess.dll
+D:\C#Files\FlyingChess\bin\Debug\net8.0\FlyingChess.pdb
+D:\C#Files\FlyingChess\obj\Debug\net8.0\FlyingChess.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#Files\FlyingChess\obj\Debug\net8.0\FlyingChess.AssemblyInfoInputs.cache
+D:\C#Files\FlyingChess\obj\Debug\net8.0\FlyingChess.AssemblyInfo.cs
+D:\C#Files\FlyingChess\obj\Debug\net8.0\FlyingChess.csproj.CoreCompileInputs.cache
+D:\C#Files\FlyingChess\obj\Debug\net8.0\FlyingChess.dll
+D:\C#Files\FlyingChess\obj\Debug\net8.0\refint\FlyingChess.dll
+D:\C#Files\FlyingChess\obj\Debug\net8.0\FlyingChess.pdb
+D:\C#Files\FlyingChess\obj\Debug\net8.0\FlyingChess.genruntimeconfig.cache
+D:\C#Files\FlyingChess\obj\Debug\net8.0\ref\FlyingChess.dll
