@@ -5,14 +5,23 @@ using System.Drawing;
 using System.Runtime.CompilerServices;
 using System.Xml.Linq;
 using System.Threading;
+using System;
 
 Console.WriteLine("Hello, World!\n来玩飞行棋吧。");
+Console.WriteLine("请输入游戏人数！1-4。");
+int players = 0;
+while (true)
+{
+    try { players = Convert.ToInt32(Console.ReadLine()); if(players!=1&&players!=2&&players!=3&&players!=4) Console.WriteLine("输入错误！请重新输入。"); else break; }
+    catch { Console.WriteLine("输入错误！请重新输入。"); }
+}
 Console.WriteLine("请输入动画速度！通常可以选择1倍，2倍，5倍或者10倍速。");
 int speed = 1;
 while (true) { 
 try{speed = Convert.ToInt32(Console.ReadLine());break; }
 catch { Console.WriteLine("输入错误！请重新输入。"); }
 }
+
 int[,] pieces = new int[4,4];
 
 string[] names = new string[4];
@@ -21,15 +30,15 @@ ConsoleColor[] t = { ConsoleColor.Yellow, ConsoleColor.Green, ConsoleColor.Blue,
 string[] ini = {"4\t\t\t\tB\tR\tY\tG\tB\tR\tY\tG\t\t\t4\r\n" ,
     "\t\t\t\tG\t\t\tG\t\t\tG\t\t\t\t\r\n" ,
     "\t\t\t\tY\t\t\tG\t\t\tB\t\t\t\t\r\n" ,
-    "Y\t\t\t\tR\t\t\tG\t\t\tR\t\t\t\t\r\n" ,
+    "Y\t\t\t\tR\t→\t→\tG\t→\t→\tR\t\t\t\t\r\n" ,
     "R\tY\tG\tB\t/\t\t\tG\t\t\t\\\tY\tG\tB\tR\r\n" ,
-    "B\t\t\t\t\t\t\tG\t\t\t\t\t\t\tY\r\n" ,
-    "G\t\t\t\t\t\t\tG\t\t\t\t\t\t\tG\r\n" ,
+    "B\t\t\t↑\t\t\t\tG\t\t\t\t↓\t\t\tY\r\n" ,
+    "G\t\t\t↑\t\t\t\tG\t\t\t\t↓\t\t\tG\r\n" ,
     "Y\tY\tY\tY\tY\tY\tY\t\tB\tB\tB\tB\tB\tB\tB\r\n" ,
-    "R\t\t\t\t\t\t\tR\t\t\t\t\t\t\tR\r\n" ,
-    "B\t\t\t\t\t\t\tR\t\t\t\t\t\t\tY\r\n" ,
+    "R\t\t\t↑\t\t\t\tR\t\t\t\t↓\t\t\tR\r\n" ,
+    "B\t\t\t↑\t\t\t\tR\t\t\t\t↓\t\t\tY\r\n" ,
     "G\tY\tR\tB\t\\\t\t\tR\t\t\t/\tY\tR\tB\tG\r\n" ,
-    "\t\t\t\tG\t\t\tR\t\t\tG\t\t\t\tB\r\n" ,
+    "\t\t\t\tG\t←\t←\tR\t←\t←\tG\t\t\t\tB\r\n" ,
     "\t\t\t\tY\t\t\tR\t\t\tB\t\t\t\t\r\n" ,
     "\t\t\t\tR\t\t\tR\t\t\tR\t\t\t\t\r\n" ,
     "4\t\t\tR\tB\tG\tY\tR\tB\tG\tY\t\t\t\t4\r\n"};
@@ -83,7 +92,7 @@ for (int i = 0; i < 80; i++)
     Console.WriteLine();
 }
 */
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < players; i++)
 { 
     
     Console.WriteLine("输入玩家{0}姓名！",i+1);
@@ -101,6 +110,7 @@ for (int i = 0; i < 80; i++)
         }
     }
  }
+if (players == 2) { names[2] = names[1]; names[1] = ""; }
 Console.Clear();
 
 
@@ -168,8 +178,12 @@ int drawMap()
                 else if (counter[0] == 2) Console.BackgroundColor = ConsoleColor.Red;
                 else Console.BackgroundColor = ConsoleColor.Blue;
                 int k = 0;
-                for (int l = 0; l < 4; l++)
-                    if (pieces[counter[0], l] != 0) k++;
+                int x = counter[0];
+                if (x == 2) x = 3;
+                else if (x == 3) x = 2;
+                for (int l = 0; l < 4; l++) { 
+                    if (pieces[x, l] != 0) k++;
+                }
                 counter[0]++;
                 Console.Write(4 - k);
             }
@@ -214,9 +228,8 @@ void Main()
         }
         if (end == 1) break;
     }
-    Console.WriteLine("感谢游玩！按任意键退出！");
-    Console.ReadKey();
 }
+
 bool movable(int player,int roll, int p)
 {
     if (pieces[player, p] == 57)
@@ -342,7 +355,8 @@ int play(int player)
     if (choice == 0) {
         Console.WriteLine("{0}无法移动。", names[player]);
         Console.ReadKey();
-        return (player + 1) % 4;
+        if (players == 2) return (player + 2) % 4;
+        return (player + 1) % players;
     }
     int flag = 0;
 
@@ -421,9 +435,22 @@ int play(int player)
         Console.ReadKey();
         return player; }
     Console.ReadKey();
-    return (player+1)%4;
+    if (players == 2) return (player + 2) % 4;
+    return (player+1)%players;
 }
 
+while (true)
+{
+    Main();
+    Console.WriteLine("感谢游玩！是否再来一局？y/n");
 
-Main();
-
+    string ans = Console.ReadLine();
+    if (ans == "n" || ans == "N")
+    {
+        Console.WriteLine("再见，祝您好运！");
+        Console.ReadKey();
+        break;
+    }
+    else if (ans == "Y" || ans == "y") ;
+    else Console.WriteLine("输入错误！请重新输入。");
+}

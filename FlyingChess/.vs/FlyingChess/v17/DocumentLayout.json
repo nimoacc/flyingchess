@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\C#Files\\FlyingChess\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAADwBAAAAAAAAAAAuwEUBAAAYAAAA",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAUwOIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T10:48:34.706Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "Points.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAuwBEAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T10:00:28.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T10:00:28.929Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Graph.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T10:14:35.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T10:14:35.872Z"
             }
           ]
         }
